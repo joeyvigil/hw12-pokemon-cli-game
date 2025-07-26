@@ -138,10 +138,10 @@ Oak: Here, take one of these rare Pokémon:
             print("A wild Pokémon appears...")
             wild = Pokemon(random.randint(1,1025))
             wild.info()
-            choose = ''
-            while (choose!='yes' and choose!='no'):
-                choose = input(f"Do you want to attempt to catch {wild.name}? (40%) (yes/no): ")
-            if choose =='yes':
+            choose2 = ''
+            while (choose2!='yes' and choose2!='no'):
+                choose2 = input(f"Do you want to attempt to catch {wild.name}? (40%) (yes/no): ")
+            if choose2 =='yes':
                 if (random.random()<.4): #40% catch rate, 25% was too low
                     print(f"{wild.name} was caught!")
                     trainer.add_pokemon(wild)
@@ -154,34 +154,34 @@ Oak: Here, take one of these rare Pokémon:
             os.system('cls||clear')
             print(f"===== {trainer.name.title()}'s Collection =====")
             trainer.show_collection()
-            choose = ''
-            while (choose!='no' and choose!='1' and choose!='2' and choose!='3' and choose!='4' and choose!='5' and choose!='6'):
-                choose = input(f"Which Pokémon do you want to inspect? (1-6,no): ")
-            if choose =='1':
+            choose3 = ''
+            while (choose3!='no' and choose3!='1' and choose3!='2' and choose3!='3' and choose3!='4' and choose3!='5' and choose3!='6'):
+                choose3 = input(f"Which Pokémon do you want to inspect? (1-6,no): ")
+            if choose3 =='1':
                 if len(trainer.collection)>=1:
                     trainer.collection[0].info()
                     input('')
-            if choose =='2':
+            if choose3 =='2':
                 if len(trainer.collection)>=2:
                     trainer.collection[1].info()
                     input('')
-            if choose =='3':
+            if choose3 =='3':
                 if len(trainer.collection)>=3:
                     trainer.collection[2].info()
                     input('')
-            if choose =='4':
+            if choose3 =='4':
                 if len(trainer.collection)>=4:
                     trainer.collection[3].info()
                     input('')
-            if choose =='5':
+            if choose3 =='5':
                 if len(trainer.collection)>=5:
                     trainer.collection[4].info()
                     input('')
-            if choose =='6':
+            if choose3 =='6':
                 if len(trainer.collection)>=6:
                     trainer.collection[5].info()
                     input('')
-            if choose =='no':
+            if choose3 =='no':
                 pass   
                         
             
@@ -190,36 +190,36 @@ Oak: Here, take one of these rare Pokémon:
             os.system('cls||clear')
             print(f"===== {trainer.name.title()}'s Collection =====")
             trainer.show_collection()
-            choose = ''
-            while (choose!='no' and choose!='1' and choose!='2' and choose!='3' and choose!='4' and choose!='5' and choose!='6'):
-                choose = input(f"Which Pokemon do you want to set free? (1-6,no): ")
-            if choose =='1':
+            choose4 = ''
+            while (choose4!='no' and choose4!='1' and choose4!='2' and choose4!='3' and choose4!='4' and choose4!='5' and choose4!='6'):
+                choose4 = input(f"Which Pokemon do you want to set free? (1-6,no): ")
+            if choose4 =='1':
                 if len(trainer.collection)>=1:
                     print(f"{trainer.collection[0].name} removed from {trainer.name}'s collection")
                     trainer.remove_pokemon(0)
                     input('')
-            if choose =='2':
+            if choose4 =='2':
                 if len(trainer.collection)>=2:
                     print(f"{trainer.collection[1].name} removed from {trainer.name}'s collection")
                     trainer.remove_pokemon(1)
                     input('')
                     
-            if choose =='3':
+            if choose4 =='3':
                 if len(trainer.collection)>=3:
                     print(f"{trainer.collection[2].name} removed from {trainer.name}'s collection")
                     trainer.remove_pokemon(2)
                     input('')
-            if choose =='4':
+            if choose4 =='4':
                 if len(trainer.collection)>=4:
                     print(f"{trainer.collection[3].name} removed from {trainer.name}'s collection")
                     trainer.remove_pokemon(3)
                     input('')
-            if choose =='5':
+            if choose4 =='5':
                 if len(trainer.collection)>=5:
                     print(f"{trainer.collection[4].name} removed from {trainer.name}'s collection")
                     trainer.remove_pokemon(4)
                     input('')
-            if choose =='6':
+            if choose4 =='6':
                 if len(trainer.collection)>=6:
                     print(f"{trainer.collection[5].name} removed from {trainer.name}'s collection")
                     trainer.remove_pokemon(5)
