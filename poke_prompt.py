@@ -4,6 +4,7 @@ import pyfiglet                         #pip install pyfiglet
 import random
 import os
 
+
 class Pokemon:
     """Represents a Pokemon with basic stats, gets information from api"""
     
@@ -66,11 +67,11 @@ class Pokemon:
     Type: {self.type}
             ''')
 
+
 def get_pokemon_data(pokemon_identifier):
     return requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_identifier}')
-            
-            
-        
+   
+                   
 class Player:
     """Represents a player with a collection of Pokemon"""
     
@@ -97,6 +98,7 @@ class Player:
         '''[0,1,2,3] want to remove last, remove_pokemon(3), if 3 <= len(4)-1 True, goes in loop'''
         if index >=0 and index <=len(self.collection)-1:
             return self.collection.pop(index)
+
 
 class PokemonGame:
     def __init__(self):
@@ -194,7 +196,6 @@ Oak: Here, take one of these rare Pokémon:
                 print(f"{self.player.collection[1].name} removed from {self.player.name}'s collection")
                 self.player.remove_pokemon(1)
                 input('')
-                
         if choose4 =='3':
             if len(self.player.collection)>=3:
                 print(f"{self.player.collection[2].name} removed from {self.player.name}'s collection")
@@ -215,6 +216,7 @@ Oak: Here, take one of these rare Pokémon:
                 print(f"{self.player.collection[5].name} removed from {self.player.name}'s collection")
                 self.player.remove_pokemon(5)
                 input('')
+
 
 def main():
     #---------- Start, choose name, Choose Starter----------
@@ -253,4 +255,3 @@ def main():
 
 if __name__ == '__main__': 
     main()
-
