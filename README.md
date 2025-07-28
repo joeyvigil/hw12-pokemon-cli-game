@@ -13,7 +13,7 @@ Set your pokemon free & Inspect your current collection
 
 ![image](images/main.jpg)
 
-If its not running, install these dependenccies in your terminal 
+If its not running, install these dependencies in your terminal 
 
 cmd: pip install -------
 
