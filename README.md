@@ -1,6 +1,24 @@
 Pokemon CLI Game - Homework Assignment
 ======================================
 
+Create a character and gain a starting pokemon
+
+![image](images/prompt.jpg)
+
+Catch Pokemon and add them to your collection
+
+![image](images/catch.jpg)
+
+Set your pokemon free & Inspect your current collection
+
+![image](images/main.jpg)
+
+If its not running, install these dependenccies in your terminal 
+
+cmd: pip install -------
+
+![image](images/imports.jpg)
+
 Homework Overview
 -----------------
 
