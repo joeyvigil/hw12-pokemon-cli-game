@@ -82,7 +82,7 @@ class Player:
         """Add a Pokemon to the collection (max 6 Pokemon)"""
         if len(self.collection) < 6:
             self.collection.append(pokemon)
-            print(f"{pokemon.name} added to {self.name}'s collection!")
+            print(f"{pokemon.name} added to {self.name.title()}'s collection!")
             return True
         else:
             print(f"Collection is full! Can't add {pokemon.name}")
